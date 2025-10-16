@@ -10,31 +10,39 @@ type Blog = {
 const blogs: Blog[] = [
   {
     title: "Sanaia at Work",
-    date: "10-08-2025",
-    description: "I went to work",
-    image: "image here",
-    imageAlt: "There is an image here",
+    date: "08-27-2025",
+    description:
+      "I’m happy to share that I’m starting a new position as the Programming Director for the Cal Poly Black Student Union!",
+    image: "./images/placeholder.png",
+    imageAlt: "Placeholder Image",
     slug: "get-to-my-image",
   },
   {
     title: "Sanaia in Class",
-    date: "10-09-2025",
-    description: "I went to class",
-    image: "image here",
-    imageAlt: "There is an image here",
+    date: "07-01-2025",
+    description:
+      "I’m happy to share that I’m starting a new position as a Student Web Developer at Cal Poly Office of Academic Innovations & Planning!",
+    image: "./images/placeholder.png",
+    imageAlt: "Placeholder Image",
     slug: "get-to-my-image",
   },
 ];
 
-const blogContainer = document.getElementById('blog-container');
+const blogContainer = document.getElementById("blog-container");
 
 blogs.forEach((blog) => {
   const image = document.createElement("img");
   image.src = blog.image;
   image.alt = blog.imageAlt;
 
-  const div = document.createElement("div");
-  div.className = "blog-post-container"
+  const containerDiv = document.createElement("div");
+  containerDiv.className = "blog-post-container";
+
+  const imgDiv = document.createElement("div");
+  imgDiv.className = "blog-post-img";
+
+  const textDiv = document.createElement("div");
+  textDiv.className = "blog-post-text";
 
   const title = document.createElement("h1");
   title.textContent = blog.title;
@@ -45,8 +53,10 @@ blogs.forEach((blog) => {
   const description = document.createElement("p");
   description.textContent = blog.description;
 
-  div.append(image, title, date, description);
   if (blogContainer) {
-    blogContainer.append(div);
-  } 
+    blogContainer.append(containerDiv);
+  }
+  imgDiv.append(image);
+  textDiv.append(title, date, description);
+  containerDiv.append(imgDiv, textDiv);
 });
