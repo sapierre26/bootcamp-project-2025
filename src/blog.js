@@ -50,12 +50,12 @@ blogs.forEach(function (blog) {
     var description = document.createElement("p");
     description.textContent = blog.description;
     var blogLink = document.createElement("a");
-    blogLink.href = "/blog/".concat(blog.slug, ".html");
+    blogLink.href = "".concat(blog.slug, ".html");
+    imgDiv.append(image);
+    textDiv.append(title, date, description);
+    blogLink.append(containerDiv);
+    containerDiv.append(imgDiv, textDiv);
     if (blogContainer) {
         blogContainer.append(containerDiv);
     }
-    imgDiv.append(image);
-    textDiv.append(title, date, description);
-    containerDiv.append(imgDiv, textDiv);
-    blogLink.append(containerDiv);
 });

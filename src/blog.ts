@@ -72,13 +72,14 @@ blogs.forEach((blog) => {
   description.textContent = blog.description;
 
   const blogLink = document.createElement("a");
-  blogLink.href = `/blog/${blog.slug}.html`;
+  blogLink.href = `${blog.slug}.html`;
 
+  imgDiv.append(image);
+  textDiv.append(title, date, description);
+  blogLink.append(containerDiv);
+  containerDiv.append(imgDiv, textDiv);
+  
   if (blogContainer) {
     blogContainer.append(containerDiv);
   }
-  imgDiv.append(image);
-  textDiv.append(title, date, description);
-  containerDiv.append(imgDiv, textDiv);
-  blogLink.append(containerDiv);
 });
