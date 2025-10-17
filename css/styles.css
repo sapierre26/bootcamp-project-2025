@@ -21,6 +21,11 @@ body {
   font-family: monospace;
 }
 
+a {
+  text-decoration: none;
+  color: var(--cg-black);
+}
+
 /* CSS for navigation */
 
 .navbar {

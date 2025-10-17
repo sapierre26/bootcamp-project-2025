@@ -34,13 +34,17 @@ var blogs = [
 ];
 var blogContainer = document.getElementById("blog-container");
 blogs.forEach(function (blog) {
-    var image = document.createElement("img");
-    image.src = blog.image;
-    image.alt = blog.imageAlt;
+    var blogLink = document.createElement("a");
+    blogLink.href = "".concat(blog.slug, ".html");
+    blogLink.className = "blog-post-link";
     var containerDiv = document.createElement("div");
     containerDiv.className = "blog-post-container";
     var imgDiv = document.createElement("div");
     imgDiv.className = "blog-post-img";
+    var image = document.createElement("img");
+    image.src = blog.image;
+    image.alt = blog.imageAlt;
+    imgDiv.append(image);
     var textDiv = document.createElement("div");
     textDiv.className = "blog-post-text";
     var title = document.createElement("h1");
@@ -49,13 +53,10 @@ blogs.forEach(function (blog) {
     date.textContent = blog.date;
     var description = document.createElement("p");
     description.textContent = blog.description;
-    var blogLink = document.createElement("a");
-    blogLink.href = "".concat(blog.slug, ".html");
-    imgDiv.append(image);
     textDiv.append(title, date, description);
-    blogLink.append(containerDiv);
     containerDiv.append(imgDiv, textDiv);
+    blogLink.append(containerDiv);
     if (blogContainer) {
-        blogContainer.append(containerDiv);
+        blogContainer.append(blogLink);
     }
 });

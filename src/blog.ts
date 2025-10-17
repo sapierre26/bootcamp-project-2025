@@ -49,15 +49,20 @@ const blogs: Blog[] = [
 const blogContainer = document.getElementById("blog-container");
 
 blogs.forEach((blog) => {
-  const image = document.createElement("img");
-  image.src = blog.image;
-  image.alt = blog.imageAlt;
+  const blogLink = document.createElement("a");
+  blogLink.href = `${blog.slug}.html`;
+  blogLink.className = "blog-post-link";
 
   const containerDiv = document.createElement("div");
   containerDiv.className = "blog-post-container";
 
   const imgDiv = document.createElement("div");
   imgDiv.className = "blog-post-img";
+
+  const image = document.createElement("img");
+  image.src = blog.image;
+  image.alt = blog.imageAlt;
+  imgDiv.append(image);
 
   const textDiv = document.createElement("div");
   textDiv.className = "blog-post-text";
@@ -70,16 +75,12 @@ blogs.forEach((blog) => {
 
   const description = document.createElement("p");
   description.textContent = blog.description;
-
-  const blogLink = document.createElement("a");
-  blogLink.href = `${blog.slug}.html`;
-
-  imgDiv.append(image);
   textDiv.append(title, date, description);
-  blogLink.append(containerDiv);
+  
   containerDiv.append(imgDiv, textDiv);
+  blogLink.append(containerDiv);
   
   if (blogContainer) {
-    blogContainer.append(containerDiv);
+    blogContainer.append(blogLink);
   }
 });
