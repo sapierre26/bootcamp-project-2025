@@ -4,7 +4,7 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
-  --cg-green-dark: 	#454B1B;
+  --cg-green-dark: #454b1b;
   --cg-green-light: #808000;
 }
 
@@ -63,22 +63,22 @@ a {
 }
 
 .nav-list li {
-    margin: 0;
-    padding: 0;
-    font-size: 17px;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
 }
 
 .nav-list li a {
-    display: block;
-    color: var(--cg-white);
-    text-align: center;
-    padding: 16px;
+  display: block;
+  color: var(--cg-white);
+  text-align: center;
+  padding: 16px;
 }
 
 .nav-list li a:hover {
-    background-color: var(--cg-green-light);
-    color: var(--cg-white);
-    text-decoration: underline;
+  background-color: var(--cg-green-light);
+  color: var(--cg-white);
+  text-decoration: underline;
 }
 
 .navbar a {
@@ -112,7 +112,7 @@ main {
   justify-content: center;
   font-size: 40px;
   font-family: Georgia;
-  color: var(--cg-green-dark)
+  color: var(--cg-green-dark);
 }
 
 /* CSS for portfolio grid */
@@ -286,7 +286,6 @@ textarea {
   resize: none;
 }
 
-
 /* Add some spacing to the form */
 form {
   width: 500px;
@@ -311,7 +310,7 @@ form {
   border-radius: 5px;
 }
 
-.blog-post-img  {
+.blog-post-img {
   flex: 0 0 150px;
   height: auto;
   overflow: hidden;
@@ -335,7 +334,7 @@ form {
 }
 
 /* CSS for individual blog pages */
-.blog-post-content-img  {
+.blog-post-content-img {
   flex: 0 0 400px;
   height: auto;
   overflow: hidden;

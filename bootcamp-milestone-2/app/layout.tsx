@@ -3,7 +3,6 @@ import { Inter } from "next/font/google"; // You can change the font to anything
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-
 // If you are experiencing an error "localFont is undefined", you might need to add the following blocks of code
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,16 +28,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-		// returns boilerplate
+  // returns boilerplate
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/> 
-        {children}</body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
 
-function localFont(arg0: { src: string; variable: string; weight: string; }) {
+function localFont(arg0: { src: string; variable: string; weight: string }) {
   throw new Error("Function not implemented.");
 }

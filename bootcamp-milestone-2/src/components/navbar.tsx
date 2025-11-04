@@ -19,7 +19,6 @@ export default function Navbar() {
         <Link className="nav-list-item" href="/portfolio">Sanaia's Portfolio</Link>
         <Link className="nav-list-item" href="/resume">Sanaia's Resume</Link>
         <Link className="nav-list-item" href="/about">Contact Me</Link>
-				{/* More Links ... */}
       </nav>
     </header>
   );
