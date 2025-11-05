@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-        <h1 class="page-title">About Sanaia</h1>
+        <h1 className="page-title">About Sanaia</h1>
 
-        <div class="about">
-            <div class="about-image">
-                <img src="images/sanaia.jpg" alt="Sanaia sitting and posing outside">
+        <div className="about">
+            <div className="about-image">
+                <Image src="/images/sanaia.jpg" alt="Sanaia sitting and posing outside" width={500} height={500}></Image>
             </div>
-            <div class="about-text">
+            <div className="about-text">
                 <p>Hi, my name is <strong>Sanaia Pierre</strong>! I am from Chicago, IL, and a 4th-year <em>Software Engineering</em> major. I also have a minor in <em>Architecture</em>. 
                     At Cal Poly, I have been a member of the <strong>Black Student Union</strong> and <strong>National Society of Black Engineers</strong>. My 2nd year was my first year as an E-Board member for the BSU. I
                     was the Graphic Arts Designer; Then last year, I was the Communications & Media Director and this year, I'm the Programming Director. I have also been a judge at the VEX 
