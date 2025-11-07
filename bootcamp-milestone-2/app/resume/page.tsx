@@ -3,16 +3,16 @@ import Image from "next/image";
 export default function Resume() {
   return (
     <main>
-      <h1 class="page-title">Sanaia's Resume</h1>
+      <h1 className="page-title">Sanaia's Resume</h1>
       <a href="resume.pdf" download>
-        <button class="button">Download Resume</button>
+        <button className="button">Download Resume</button>
       </a>
 
-      <div class="resume">
-        <section class="section">
-          <h2 class="section-title">Education</h2>
-          <div class="entry">
-            <h3 class="entry-title">
+      <div className="resume">
+        <section className="section">
+          <h2 className="section-title">Education</h2>
+          <div className="entry">
+            <h3 className="entry-title">
               California Polytechnic State University, San Luis Obispo | San
               Luis Obispo, CA
             </h3>
@@ -23,11 +23,11 @@ export default function Resume() {
           </div>
         </section>
 
-        <section class="section">
-          <h2 class="section-title">Coursework</h2>
-          <div class="entry">
-            <h3 class="entry-title"></h3>
-            <ul class="course-list">
+        <section className="section">
+          <h2 className="section-title">Coursework</h2>
+          <div className="entry">
+            <h3 className="entry-title"></h3>
+            <ul className="course-list">
               <li>Data Structures</li>
               <li>Project-Based Object-Oriented Programming</li>
               <li>Introduction to Computer Organization</li>
@@ -40,14 +40,14 @@ export default function Resume() {
           </div>
         </section>
 
-        <section class="section">
-          <h2 class="section-title">Project Experience</h2>
-          <div class="entry">
-            <h3 class="entry-title">Sanaia's Personal Website</h3>
-            <p class="entry-description">
+        <section className="section">
+          <h2 className="section-title">Project Experience</h2>
+          <div className="entry">
+            <h3 className="entry-title">Sanaia's Personal Website</h3>
+            <p className="entry-description">
               Hack4Impact | October 2025 - PRESENT
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Went through a starter pack to get a understanding of web
                 development fundamentals
@@ -55,12 +55,12 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div class="entry">
-            <h3 class="entry-title">To-Do List App</h3>
-            <p class="entry-description">
+          <div className="entry">
+            <h3 className="entry-title">To-Do List App</h3>
+            <p className="entry-description">
               Software Engineering I & II | January 2025 - June 2025
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Developed a Figma prototype of how users would go between
                 screens, create new lists, add tasks to lists, and add tasks to
@@ -80,15 +80,15 @@ export default function Resume() {
           </div>
         </section>
 
-        <section class="section">
-          <h2 class="section-title">Work Experience</h2>
-          <div class="entry">
-            <h3 class="entry-title">Student Web Developer</h3>
-            <p class="entry-description">
+        <section className="section">
+          <h2 className="section-title">Work Experience</h2>
+          <div className="entry">
+            <h3 className="entry-title">Student Web Developer</h3>
+            <p className="entry-description">
               Cal Poly Office of Innovations Programs & Planning | July 2025 -
               PRESENT
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Developed Figma prototypes for the reconstruction of websites
                 under the Office of Academic Innovations & Planning umbrella
@@ -106,13 +106,13 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div class="entry">
-            <h3 class="entry-title">Student Assistant</h3>
-            <p class="entry-description">
+          <div className="entry">
+            <h3 className="entry-title">Student Assistant</h3>
+            <p className="entry-description">
               Cal Poly Office of Academic Programs & Planning | July 2024 -
               PRESENT
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Worked on an archival project by continuing to scan older degree
                 plan paper documents into specific OneDrive folders based on the
@@ -130,13 +130,13 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div class="entry">
-            <h3 class="entry-title">On-Call Team Member</h3>
-            <p class="entry-description">
+          <div className="entry">
+            <h3 className="entry-title">On-Call Team Member</h3>
+            <p className="entry-description">
               Cal Poly Office of University Diversity & Inclusion | October 2024
               - PRESENT
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Assisted with the setup and take-down of events that are meant
                 to educate those at Cal Poly and in the surrounding San Luis
@@ -147,12 +147,12 @@ export default function Resume() {
           </div>
         </section>
 
-        <section class="section">
-          <h2 class="section-title">Skills</h2>
+        <section className="section">
+          <h2 className="section-title">Skills</h2>
           <div id="skills">
-            <div class="entry">
-              <h3 class="entry-title">Software</h3>
-              <ul class="skills-list">
+            <div className="entry">
+              <h3 className="entry-title">Software</h3>
+              <ul className="skills-list">
                 <li>Figma</li>
                 <li>SketchUp</li>
                 <li>Autodesk Fusion360</li>
@@ -162,9 +162,9 @@ export default function Resume() {
               </ul>
             </div>
 
-            <div class="entry">
-              <h3 class="entry-title">Programming Languages</h3>
-              <ul class="skills-list">
+            <div className="entry">
+              <h3 className="entry-title">Programming Languages</h3>
+              <ul className="skills-list">
                 <li>Python</li>
                 <li>Java</li>
                 <li>HTML/CSS</li>
@@ -174,9 +174,9 @@ export default function Resume() {
               </ul>
             </div>
 
-            <div class="entry">
-              <h3 class="entry-title">Fabrication</h3>
-              <ul class="skills-list">
+            <div className="entry">
+              <h3 className="entry-title">Fabrication</h3>
+              <ul className="skills-list">
                 <li>3D Printing</li>
                 <li>Laser Cutting</li>
                 <li>Lathe</li>
@@ -186,14 +186,14 @@ export default function Resume() {
           </div>
         </section>
 
-        <section class="section">
-          <h2 class="section-title">Extracurriculars</h2>
-          <div class="entry">
-            <h3 class="entry-title">Programming Director</h3>
-            <p class="entry-description">
+        <section className="section">
+          <h2 className="section-title">Extracurriculars</h2>
+          <div className="entry">
+            <h3 className="entry-title">Programming Director</h3>
+            <p className="entry-description">
               Cal Poly SLO Black Student Union (BSU) | 2025 - PRESENT
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Oversaw the logistics of BSU programming events, such as
                 securing venues, catering, itineraries, and budgets, as well as
@@ -207,12 +207,12 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div class="entry">
-            <h3 class="entry-title">Communications & Media Director</h3>
-            <p class="entry-description">
+          <div className="entry">
+            <h3 className="entry-title">Communications & Media Director</h3>
+            <p className="entry-description">
               Cal Poly SLO Black Student Union (BSU) | July 2024 - June 2025
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Collaborated with the Graphic Arts Director to maintain
                 consistent activity on the BSU Instagram page
@@ -235,13 +235,13 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div class="entry">
-            <h3 class="entry-title">Volunteer</h3>
-            <p class="entry-description">
+          <div className="entry">
+            <h3 className="entry-title">Volunteer</h3>
+            <p className="entry-description">
               Cal Poly SLO Black Student Union (BSU) | November 2024 - January
               2025
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Developed graphics to acquire volunteers for and promote the ABC
                 Conference being held on the Cal Poly SLO campus
@@ -259,13 +259,13 @@ export default function Resume() {
             </ul>
           </div>
 
-          <div class="entry">
-            <h3 class="entry-title">Judge</h3>
-            <p class="entry-description">
+          <div className="entry">
+            <h3 className="entry-title">Judge</h3>
+            <p className="entry-description">
               Cal Poly Society of Women Engineers (SWE) | January 2022
               (Recurring)
             </p>
-            <ul class="entry-details">
+            <ul className="entry-details">
               <li>
                 Volunteered as a Judge for the 2023, 2024, and 2025 VEX Robotics
                 Competitions held at the Cal Poly SLO campuss
